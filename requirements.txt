@@ -1,0 +1,8 @@
+opencv-python>=4.8
+mediapipe==0.10.21
+numpy>=1.24
+
+# NOTE on the mediapipe pin:
+# mediapipe versions 0.10.30+ removed the classic `mp.solutions.hands`
+# API (used here for the colorful hand-skeleton drawing) in favor of the
+# newer Tasks API. Pinning to 0.10.21 keeps this script working as-is.

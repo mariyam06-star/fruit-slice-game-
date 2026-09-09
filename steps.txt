@@ -1,0 +1,122 @@
+C:\Users\ratho\OneDrive\Documents\Desktop\fruit-slice-game
+cd "C:\Users\ratho\OneDrive\Documents\Desktop\fruit-slice-game"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+(venv) PS C:\Users\ratho\OneDrive\Documents\Desktop\fruit-slice-game>
+python hand_fruit_slice.py
+
+
+Open VS Code
+     ↓
+Open fruit-slice-game
+     ↓
+Open Terminal
+     ↓
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+     ↓
+.\venv\Scripts\Activate.ps1
+     ↓
+python hand_fruit_slice.py
+
+
+--------------------------------------------------------
+
+1. Check which Python versions you have
+Run:
+
+py --list
+
+
+
+You will probably see something like:
+
+ -V:3.13 *        Python 3.13
+
+
+
+If you don't see Python 3.12, install it first.
+
+2. Install Python 3.12
+The easiest way on Windows is:
+
+winget install Python.Python.3.12
+
+
+
+Let the installation finish.
+
+Then close VS Code completely and reopen it.
+
+3. Verify Python 3.12
+In the new VS Code terminal:
+
+py -3.12 --version
+
+
+
+You want:
+
+Python 3.12.x
+
+
+
+4. Create the virtual environment
+Make sure you're in your project:
+
+cd "C:\Users\ratho\OneDrive\Documents\Desktop\fruit-slice-game"
+
+
+
+Then:
+
+py -3.12 -m venv venv
+
+
+
+Check that it exists:
+
+dir venv
+
+
+
+You should see folders including:
+
+Scripts
+Lib
+Include
+
+
+
+5. Activate it
+Now this should work:
+
+.\venv\Scripts\Activate.ps1
+
+
+
+Your prompt should change to something like:
+
+(venv) PS C:\Users\ratho\OneDrive\Documents\Desktop\fruit-slice-game>
+
+
+
+6. Install your requirements
+Finally:
+
+python -m pip install -r requirements.txt
+
+
+
+Then:
+
+python hand_fruit_slice.py
+
+
+
+If winget install Python.Python.3.12 doesn't work
+Run:
+
+py --list
+
+
+
